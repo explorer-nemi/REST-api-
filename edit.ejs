@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit page</title>
+</head>
+<body>
+    <h2>edit posts</h2>
+    <p>posts id :<%=post.id%> </p>
+        <p>posts username :<%=post.username%></p>
+    <form  method="post" action="/postss/<%= post.id %>?_method=PATCH" >
+
+        <textarea name="bank"> <%=post.bank%>  </textarea>
+
+        <button>
+             submit 
+        </button>
+
+        
+    </form>
+</body>
+</html>
